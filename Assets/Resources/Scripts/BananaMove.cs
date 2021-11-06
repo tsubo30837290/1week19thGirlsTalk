@@ -5,7 +5,12 @@ using UnityEngine;
 // バナナにつけるScript
 public class BananaMove : MonoBehaviour
 {
-    public float speed;
+    float speed;
+
+    void Start()
+    {
+        speed = ParamsSO.Entity.bananaSpeed;
+    }
 
     void Update()
     {

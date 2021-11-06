@@ -5,9 +5,11 @@ using UnityEngine;
 public class BananaGenerator : MonoBehaviour
 {
     [SerializeField] GameObject banana;
+    float interval;
 
     private void Start()
     {
+        interval = ParamsSO.Entity.bananaInterval;
         StartCoroutine(BananaInstance());
     }
 
@@ -17,7 +19,7 @@ public class BananaGenerator : MonoBehaviour
         {
             // バナナを生成する(Instantiate)：何を、どこに、どの向きで
             Instantiate(banana, transform.position, transform.rotation);
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(interval);
         }
     }
 }

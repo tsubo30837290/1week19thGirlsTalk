@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed = 0.05f;
+    public float speed;
 
     [SerializeField] GameObject bulletPref; // トッピング弾
+
+    void Start()
+    {
+        speed = ParamsSO.Entity.playerSpeed;
+    }
 
     void Update()
     {
