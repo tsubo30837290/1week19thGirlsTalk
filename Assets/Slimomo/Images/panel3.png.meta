@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 84120d577b6f7914cbc8d7d63f424bbe
+guid: 64402aa9f2fa0374caee73d29c9972da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5837486536977534547
-    second: BodyBuilder_0
+      213: 5058220985646924727
+    second: panel3_0
   - first:
-      213: 2718909718729486226
-    second: BodyBuilder_1
+      213: -8271946063117908272
+    second: panel3_1
   - first:
-      213: -3522444704638071487
-    second: BodyBuilder_2
+      213: -2672698141951223429
+    second: panel3_2
   - first:
-      213: 8326926143674138334
-    second: BodyBuilder_3
+      213: -2088891468603475262
+    second: panel3_3
   - first:
-      213: 3353649473256558755
-    second: BodyBuilder_4
+      213: -5631106213843013059
+    second: panel3_4
   - first:
-      213: 2440930143905366714
-    second: BodyBuilder_5
+      213: -9172963799432372992
+    second: panel3_5
   - first:
-      213: 2618330185408306078
-    second: BodyBuilder_6
+      213: -8664983327380725207
+    second: panel3_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,7 +67,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -172,13 +172,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BodyBuilder_0
+      name: panel3_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 113
-        width: 204
-        height: 207
+        x: 29
+        y: 820
+        width: 607
+        height: 203
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da134564ce41dfea0800000000000000
-      internalID: -5837486536977534547
+      spriteID: 7b349e4df29623640800000000000000
+      internalID: 5058220985646924727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBuilder_1
+      name: panel3_1
       rect:
         serializedVersion: 2
-        x: 263
-        y: 180
-        width: 123
-        height: 131
+        x: 646
+        y: 734
+        width: 330
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29f6a39dbf18bb520800000000000000
-      internalID: 2718909718729486226
+      spriteID: 0d68aaad1e4243d80800000000000000
+      internalID: -8271946063117908272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBuilder_2
+      name: panel3_2
       rect:
         serializedVersion: 2
-        x: 395
-        y: 60
-        width: 155
-        height: 148
+        x: 657
+        y: 507
+        width: 339
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14d871f2433cd1fc0800000000000000
-      internalID: -3522444704638071487
+      spriteID: b799621533ba8ead0800000000000000
+      internalID: -2672698141951223429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBuilder_3
+      name: panel3_3
       rect:
         serializedVersion: 2
-        x: 600
-        y: 54
-        width: 186
-        height: 316
+        x: 334
+        y: 374
+        width: 317
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ede3c90b53f2f8370800000000000000
-      internalID: 8326926143674138334
+      spriteID: 2cabb87d644c203e0800000000000000
+      internalID: -2088891468603475262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBuilder_4
+      name: panel3_4
       rect:
         serializedVersion: 2
-        x: 861
-        y: 188
-        width: 137
-        height: 164
+        x: 57
+        y: 582
+        width: 532
+        height: 188
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,20 +270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a012a27d6e8a8e20800000000000000
-      internalID: 3353649473256558755
+      spriteID: d32746fbbba4ad1b0800000000000000
+      internalID: -5631106213843013059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBuilder_5
+      name: panel3_5
       rect:
         serializedVersion: 2
-        x: 883
-        y: 48
-        width: 161
-        height: 129
+        x: 88
+        y: 387
+        width: 211
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,20 +291,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab2c505880defd120800000000000000
-      internalID: 2440930143905366714
+      spriteID: 00dd05d560613b080800000000000000
+      internalID: -9172963799432372992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBuilder_6
+      name: panel3_6
       rect:
         serializedVersion: 2
-        x: 907
-        y: 361
-        width: 168
-        height: 174
+        x: 23
+        y: 14
+        width: 991
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,8 +312,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9bd1fd5e6d265420800000000000000
-      internalID: 2618330185408306078
+      spriteID: 9222ac2a29bcfb780800000000000000
+      internalID: -8664983327380725207
       vertices: []
       indices: 
       edges: []

@@ -1,7 +1,85 @@
 fileFormatVersion: 2
 guid: dfb288494134a914cadc07226cf76050
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6229262282288487282
+    second: banabas_0
+  - first:
+      213: 1915157955272699074
+    second: banabas_1
+  - first:
+      213: -5414785900679951850
+    second: banabas_2
+  - first:
+      213: -7509582790842404209
+    second: banabas_3
+  - first:
+      213: 7888227814471096970
+    second: banabas_4
+  - first:
+      213: -7536343912018134794
+    second: banabas_5
+  - first:
+      213: -3222918406307741385
+    second: banabas_6
+  - first:
+      213: 1920209545406007180
+    second: banabas_7
+  - first:
+      213: 6582352675633693733
+    second: banabas_8
+  - first:
+      213: 2459370274030959959
+    second: banabas_9
+  - first:
+      213: 4824805512547712528
+    second: banabas_10
+  - first:
+      213: -3382437497950050093
+    second: banabas_11
+  - first:
+      213: -4268870218623570454
+    second: banabas_12
+  - first:
+      213: 1442273836174478698
+    second: banabas_13
+  - first:
+      213: -4645299343202424240
+    second: banabas_14
+  - first:
+      213: -3137300775547359869
+    second: banabas_15
+  - first:
+      213: 7834381537387344560
+    second: banabas_16
+  - first:
+      213: 4584511986723473507
+    second: banabas_17
+  - first:
+      213: 4686973631632335424
+    second: banabas_18
+  - first:
+      213: 3115941001251154675
+    second: banabas_19
+  - first:
+      213: 1771004337657625059
+    second: banabas_20
+  - first:
+      213: 110724071763644364
+    second: banabas_21
+  - first:
+      213: 5286469933557213937
+    second: banabas_22
+  - first:
+      213: -7879471935510085038
+    second: banabas_23
+  - first:
+      213: -1072295070526913371
+    second: banabas_24
+  - first:
+      213: 4165996280648330898
+    second: banabas_25
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +119,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +153,627 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: banabas_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 867
+        width: 76
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84a47355f63d89a0800000000000000
+      internalID: -6229262282288487282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 890
+        width: 80
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cceacc6302049a10800000000000000
+      internalID: 1915157955272699074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_2
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 867
+        width: 87
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a8d2f79e0dad4b0800000000000000
+      internalID: -5414785900679951850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_3
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 877
+        width: 74
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82b37c3d3a98c790800000000000000
+      internalID: -7509582790842404209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_4
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 782
+        width: 92
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ad7e4576d987d60800000000000000
+      internalID: 7888227814471096970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_5
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 811
+        width: 81
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f83bfa2427896790800000000000000
+      internalID: -7536343912018134794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_6
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 699
+        width: 74
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73185f309c4e543d0800000000000000
+      internalID: -3222918406307741385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 723
+        width: 78
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c874d386864f5aa10800000000000000
+      internalID: 1920209545406007180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_8
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 583
+        width: 145
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5240d7932e6395b50800000000000000
+      internalID: 6582352675633693733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_9
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 605
+        width: 91
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d35c2eb30712220800000000000000
+      internalID: 2459370274030959959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_10
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 606
+        width: 70
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01eb0cdfc0725f240800000000000000
+      internalID: 4824805512547712528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_11
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 393
+        width: 96
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8e9bb340b2f01d0800000000000000
+      internalID: -3382437497950050093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_12
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 408
+        width: 110
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeda2b2572de1c4c0800000000000000
+      internalID: -4268870218623570454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_13
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 384
+        width: 126
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d050a996cf30410800000000000000
+      internalID: 1442273836174478698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_14
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 386
+        width: 83
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a6015fbd4988fb0800000000000000
+      internalID: -4645299343202424240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_15
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 298
+        width: 126
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d21f711911674d0800000000000000
+      internalID: -3137300775547359869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_16
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 319
+        width: 105
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2f9daff7059bc60800000000000000
+      internalID: 7834381537387344560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_17
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 210
+        width: 88
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3684c25bc557f9f30800000000000000
+      internalID: 4584511986723473507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_18
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 223
+        width: 104
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04261117fa97b0140800000000000000
+      internalID: 4686973631632335424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_19
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 24
+        width: 197
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa66a8e4db0e3b20800000000000000
+      internalID: 3115941001251154675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_20
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 109
+        width: 101
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e932c9df0fd39810800000000000000
+      internalID: 1771004337657625059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_21
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 125
+        width: 95
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf8e85e4fe598100800000000000000
+      internalID: 110724071763644364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 36
+        width: 18
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fae57945605d5940800000000000000
+      internalID: 5286469933557213937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_23
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 61
+        width: 16
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252034a950e76a290800000000000000
+      internalID: -7879471935510085038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_24
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 43
+        width: 18
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a447da80517e11f0800000000000000
+      internalID: -1072295070526913371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banabas_25
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 32
+        width: 21
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e64ab7b8790d930800000000000000
+      internalID: 4165996280648330898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
