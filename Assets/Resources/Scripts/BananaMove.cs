@@ -9,7 +9,7 @@ public class BananaMove : MonoBehaviour
     float speed;
 
     [SerializeField] GameObject bananaUI;
-    Slider bananaSlider;
+    public Slider bananaSlider;
 
     [SerializeField] Sprite[] chocoSprite;
     [SerializeField] Sprite[] stickSprite;
@@ -43,7 +43,19 @@ public class BananaMove : MonoBehaviour
         {
             bananaUI.SetActive(true);
         }
-        bananaSlider.value += ParamsSO.Entity.bananaHitGauge;
+
+        // もしバナナのゲージがMaxだったら → スコアを加算する
+        if (bananaSlider.value >= 1)
+        {
+            // Score加算
+            GameManager.instance.UpdateScoreUI();
+        }
+        // そうじゃなかったらバナナゲージを加算する
+        else
+        {
+            // ゲージを上げる
+            bananaSlider.value += ParamsSO.Entity.bananaHitGauge;
+        }
     }
 
     void SpriteChange()

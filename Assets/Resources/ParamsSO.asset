@@ -16,4 +16,4 @@ MonoBehaviour:
   bananaInterval: 3
   bananaHitGauge: 0.1
   playerSpeed: 5
-  bulletSpeed: 30
+  bulletSpeed: 10

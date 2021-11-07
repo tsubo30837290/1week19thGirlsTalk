@@ -9,11 +9,18 @@ public class Bullet : MonoBehaviour
     bool hit;
 
     SpriteRenderer sr;
+    GameObject target;
+    Vector3 targetPos;
 
     void Start()
     {
+        // 向かう目標地点
+        target = GameObject.Find("Target");
+        targetPos = target.transform.position - transform.position;
+
         sr = GetComponent<SpriteRenderer>();
         speed = ParamsSO.Entity.bulletSpeed;
+
         //ShotMove();
     }
 
@@ -21,8 +28,8 @@ public class Bullet : MonoBehaviour
     {
         if (!hit)
         {
-            transform.position += new Vector3(0, speed, speed) * Time.deltaTime;
-            //transform.position += transform.forward * Time.deltaTime * 10;
+            //transform.position += new Vector3(0, speed, speed) * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position + 100 * targetPos, speed * Time.deltaTime);
 
             // もし弾が6より上に移動したら
             if (transform.position.y >= 20)
@@ -35,6 +42,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
+        // バナナに当たったら
         if (collision.gameObject.tag == "Banana")
         {
             //StartCoroutine(Hit(collision));
@@ -57,8 +65,9 @@ public class Bullet : MonoBehaviour
         // 徐々にフェードさせる（α値を下げる）
         DOTween.ToAlpha(() => sr.color,
         a => sr.color = a, 0.0f, 0.2f);
-    }
+    }*/
 
+    /*
     IEnumerator Hit(Collider2D collision)
     {
         //float r = Random.Range(0, 0.01f);

@@ -5,17 +5,19 @@ using DG.Tweening;
 
 public class Player : MonoBehaviour
 {
-    public float speed;
+    //public float speed;
 
     [SerializeField] GameObject bulletPref; // トッピング弾
+    [SerializeField] Sprite[] bulletSp; // 変更するための画像（配列）
 
     void Start()
     {
-        speed = ParamsSO.Entity.playerSpeed;
+        //speed = ParamsSO.Entity.playerSpeed;
     }
 
     void Update()
     {
+        /*
         // 方向キーの入力された数値をxに入れる
         float x = Input.GetAxis("Horizontal");
 
@@ -28,7 +30,7 @@ public class Player : MonoBehaviour
         else if (x < 0)
         {
             transform.position += new Vector3(-speed, 0, 0) * Time.deltaTime;
-        }
+        }*/
 
         // もしスペースが押されたら
         // Input：入力に関すること（キー入力、マウス入力…）
@@ -41,7 +43,13 @@ public class Player : MonoBehaviour
     void Shot()
     {
         // 弾を生成する
-        Instantiate(bulletPref, transform.position, transform.rotation);
+        GameObject bullet = Instantiate(bulletPref, transform.position, transform.rotation);
+
+        // ランダムな数字を用意する
+        int r = Random.Range(0, bulletSp.Length);
+
+        // 画像をランダムにかえる
+        bullet.GetComponent<SpriteRenderer>().sprite = bulletSp[r];
 
         // 反動を与える
         transform.DOPunchPosition(
