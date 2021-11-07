@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BananaGenerator : MonoBehaviour
 {
-    [SerializeField] GameObject banana;
+    [SerializeField] GameObject[] banana;
     float interval;
 
     private void Start()
@@ -17,8 +17,9 @@ public class BananaGenerator : MonoBehaviour
     {
         while (true)
         {
+            int r = Random.Range(0, banana.Length);
             // バナナを生成する(Instantiate)：何を、どこに、どの向きで
-            Instantiate(banana, transform.position, transform.rotation);
+            Instantiate(banana[r], transform.position, transform.rotation);
             yield return new WaitForSeconds(interval);
         }
     }

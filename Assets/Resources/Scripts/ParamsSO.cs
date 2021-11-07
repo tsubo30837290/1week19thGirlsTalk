@@ -11,6 +11,9 @@ public class ParamsSO : ScriptableObject
     [Header("バナナの生成間隔")]
     public float bananaInterval;
 
+    [Header("バナナに当たった時に1度で上がる量")]
+    public float bananaHitGauge;
+
     [Header("Playerの移動速度")]
     public float playerSpeed;
 

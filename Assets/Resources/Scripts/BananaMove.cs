@@ -11,8 +11,15 @@ public class BananaMove : MonoBehaviour
     [SerializeField] GameObject bananaUI;
     Slider bananaSlider;
 
+    [SerializeField] Sprite[] chocoSprite;
+    [SerializeField] Sprite[] stickSprite;
+
+    [SerializeField] GameObject choco;
+    [SerializeField] GameObject stick;
+
     void Start()
     {
+        SpriteChange();
         speed = ParamsSO.Entity.bananaSpeed;
         bananaSlider = bananaUI.transform.Find("Banana Bar").GetComponent<Slider>();
         bananaSlider.value = 0f;
@@ -20,7 +27,7 @@ public class BananaMove : MonoBehaviour
 
     void Update()
     {
-        transform.position += new Vector3(speed, 0, 0);
+        transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
 
         // もしバナナが-10より左に移動したら
         if (transform.position.x <= -10)
@@ -36,6 +43,15 @@ public class BananaMove : MonoBehaviour
         {
             bananaUI.SetActive(true);
         }
-        bananaSlider.value += 0.05f;
+        bananaSlider.value += ParamsSO.Entity.bananaHitGauge;
+    }
+
+    void SpriteChange()
+    {
+        int chocoN = Random.Range(0, chocoSprite.Length);
+        choco.GetComponent<SpriteRenderer>().sprite = chocoSprite[chocoN];
+
+        int stickN = Random.Range(0, stickSprite.Length);
+        stick.GetComponent<SpriteRenderer>().sprite = stickSprite[stickN];
     }
 }
