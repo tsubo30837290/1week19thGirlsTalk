@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject bulletPref; // トッピング弾
     [SerializeField] Sprite[] bulletSp; // 変更するための画像（配列）
 
+    [SerializeField] Color32[] colors;
+
     void Start()
     {
         //speed = ParamsSO.Entity.playerSpeed;
@@ -48,8 +50,12 @@ public class Player : MonoBehaviour
         // ランダムな数字を用意する
         int r = Random.Range(0, bulletSp.Length);
 
+        // ランダムに色を変更する
+        int n = Random.Range(0, colors.Length);
+
         // 画像をランダムにかえる
         bullet.GetComponent<SpriteRenderer>().sprite = bulletSp[r];
+        bullet.GetComponent<SpriteRenderer>().color = colors[n];
 
         // 反動を与える
         transform.DOPunchPosition(

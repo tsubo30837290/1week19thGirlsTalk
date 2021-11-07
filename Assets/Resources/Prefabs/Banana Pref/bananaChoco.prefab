@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 783256196111160218}
   - component: {fileID: 9082148874430496018}
   - component: {fileID: 1805074432082967396}
-  - component: {fileID: 8966547638851957154}
+  - component: {fileID: 7887889236412079373}
   m_Layer: 0
   m_Name: bananaChoco
   m_TagString: Banana
@@ -110,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 4251852204602389790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1524271895593945934}
   - {fileID: 708659373568158788}
@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bananaUI: {fileID: 4659756234813218526}
+  bananaSlider: {fileID: 0}
   chocoSprite:
   - {fileID: -6229262282288487282, guid: dfb288494134a914cadc07226cf76050, type: 3}
   - {fileID: 322959846378927435, guid: 506b45571f03de8499c74ef2c0a3c443, type: 3}
@@ -193,20 +194,64 @@ MonoBehaviour:
   - {fileID: 4165996280648330898, guid: dfb288494134a914cadc07226cf76050, type: 3}
   choco: {fileID: 4251852204602389790}
   stick: {fileID: 6716796406524936687}
---- !u!136 &8966547638851957154
-CapsuleCollider:
+--- !u!60 &7887889236412079373
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4251852204602389790}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.32990894
-  m_Height: 1.0698907
-  m_Direction: 1
-  m_Center: {x: -0.07012746, y: 0.040072814, z: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.76, y: 1.13}
+    newSize: {x: 5.8, y: 5.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.049999997, y: 0.515}
+      - {x: -0.03, y: 0.525}
+      - {x: -0.089999996, y: 0.555}
+      - {x: -0.19, y: 0.555}
+      - {x: -0.22999999, y: 0.515}
+      - {x: -0.29, y: 0.435}
+      - {x: -0.34, y: 0.36499998}
+      - {x: -0.38, y: 0.005}
+      - {x: -0.37, y: -0.114999995}
+      - {x: -0.32, y: -0.275}
+      - {x: -0.29999998, y: -0.345}
+      - {x: -0.29, y: -0.475}
+      - {x: -0.26, y: -0.525}
+      - {x: -0.22, y: -0.555}
+      - {x: -0.17, y: -0.565}
+      - {x: -0.12, y: -0.545}
+      - {x: -0.07, y: -0.505}
+      - {x: -0.03, y: -0.435}
+      - {x: -0.02, y: -0.405}
+      - {x: 0.01, y: -0.405}
+      - {x: 0.08, y: -0.435}
+      - {x: 0.14999999, y: -0.435}
+      - {x: 0.19, y: -0.405}
+      - {x: 0.19999999, y: -0.355}
+      - {x: 0.24, y: -0.325}
+      - {x: 0.29999998, y: -0.315}
+      - {x: 0.37, y: -0.275}
+      - {x: 0.38, y: -0.185}
+      - {x: 0.34, y: -0.055}
+      - {x: 0.25, y: 0.095}
+      - {x: 0.22999999, y: 0.195}
+      - {x: 0.22, y: 0.355}
+      - {x: 0.17, y: 0.42499998}
 --- !u!1 &4659756234813218526
 GameObject:
   m_ObjectHideFlags: 0

@@ -550,7 +550,7 @@ GameObject:
   - component: {fileID: 6466999359911960057}
   - component: {fileID: 3272864254688752497}
   - component: {fileID: 5362981604717147399}
-  - component: {fileID: 1956048473587373295}
+  - component: {fileID: 6632873226802243485}
   m_Layer: 0
   m_Name: bananaChoco 5
   m_TagString: Banana
@@ -567,7 +567,7 @@ Transform:
   m_GameObject: {fileID: 7521108094863424381}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 5063884148760003885}
   - {fileID: 6535957850184262183}
@@ -639,6 +639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bananaUI: {fileID: 1426248414447489213}
+  bananaSlider: {fileID: 0}
   chocoSprite:
   - {fileID: -7536343912018134794, guid: dfb288494134a914cadc07226cf76050, type: 3}
   - {fileID: 2722069565381549634, guid: 506b45571f03de8499c74ef2c0a3c443, type: 3}
@@ -650,17 +651,46 @@ MonoBehaviour:
   - {fileID: 4165996280648330898, guid: dfb288494134a914cadc07226cf76050, type: 3}
   choco: {fileID: 7521108094863424381}
   stick: {fileID: 1033312530944315276}
---- !u!136 &1956048473587373295
-CapsuleCollider:
+--- !u!60 &6632873226802243485
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7521108094863424381}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.36472225
-  m_Height: 1.3601515
-  m_Direction: 1
-  m_Center: {x: 0.003661573, y: 0.0036615133, z: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.81, y: 1.47}
+    newSize: {x: 5.8, y: 5.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.385, y: -0.355}
+      - {x: 0.375, y: 0.024999999}
+      - {x: 0.405, y: 0.235}
+      - {x: 0.405, y: 0.635}
+      - {x: 0.325, y: 0.695}
+      - {x: 0.24499999, y: 0.73499995}
+      - {x: -0.035, y: 0.73499995}
+      - {x: -0.265, y: 0.515}
+      - {x: -0.36499998, y: 0.315}
+      - {x: -0.405, y: 0.085}
+      - {x: -0.405, y: -0.545}
+      - {x: -0.375, y: -0.66499996}
+      - {x: -0.325, y: -0.715}
+      - {x: -0.295, y: -0.73499995}
+      - {x: -0.114999995, y: -0.73499995}
+      - {x: 0.005, y: -0.66499996}
+      - {x: 0.114999995, y: -0.515}
+      - {x: 0.305, y: -0.48499998}

@@ -17,6 +17,8 @@ public class BananaMove : MonoBehaviour
     [SerializeField] GameObject choco;
     [SerializeField] GameObject stick;
 
+    bool isUp;
+
     void Start()
     {
         SpriteChange();
@@ -39,22 +41,28 @@ public class BananaMove : MonoBehaviour
 
     public void UpdateValue()
     {
-        if (bananaUI.activeSelf == false)
+        if (!isUp)
         {
-            bananaUI.SetActive(true);
-        }
+            if (bananaUI.activeSelf == false)
+            {
+                bananaUI.SetActive(true);
+            }
 
-        // もしバナナのゲージがMaxだったら → スコアを加算する
-        if (bananaSlider.value >= 1)
-        {
-            // Score加算
-            GameManager.instance.UpdateScoreUI();
-        }
-        // そうじゃなかったらバナナゲージを加算する
-        else
-        {
-            // ゲージを上げる
-            bananaSlider.value += ParamsSO.Entity.bananaHitGauge;
+            // もしバナナのゲージがMaxだったら → スコアを加算する
+            if (bananaSlider.value >= 0.9f)
+            {
+                isUp = true;
+                Destroy(bananaUI,0.1f);
+
+                // Score加算
+                GameManager.instance.UpdateScoreUI();
+            }
+            // そうじゃなかったらバナナゲージを加算する
+            else
+            {
+                // ゲージを上げる
+                bananaSlider.value += ParamsSO.Entity.bananaHitGauge;
+            }
         }
     }
 

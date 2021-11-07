@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour
         if (!hit)
         {
             //transform.position += new Vector3(0, speed, speed) * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position + 100 * targetPos, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, target.transform.position + 100 * targetPos, speed * Time.deltaTime);
 
             // もし弾が6より上に移動したら
             if (transform.position.y >= 20)
@@ -40,7 +40,7 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         // バナナに当たったら
         if (collision.gameObject.tag == "Banana")
