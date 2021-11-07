@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 51d9eb59714348e4f95cd94c884d122a
+guid: 0bcdc86808c2f124d86879a10b697c72
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 603544858007510933
-    second: smoke3_0
+      213: 8356354729213926755
+    second: result_0
   - first:
-      213: 5828677430782931699
-    second: smoke3_1
+      213: -2973317010107304648
+    second: result_1
   - first:
-      213: 9118811016050369299
-    second: smoke3_2
+      213: 7820841249212869949
+    second: result_2
   - first:
-      213: 3976216148890446090
-    second: smoke3_3
-  - first:
-      213: -6408801265303929283
-    second: smoke3_4
-  - first:
-      213: 3551775767739241507
-    second: smoke3_5
+      213: 8659754262950818534
+    second: result_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -169,13 +163,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smoke3_0
+      name: result_0
       rect:
         serializedVersion: 2
-        x: 75
-        y: 721
-        width: 336
-        height: 270
+        x: 0
+        y: 497
+        width: 399
+        height: 527
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,62 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59f1d83c9d8306800800000000000000
-      internalID: 603544858007510933
+      spriteID: 36d93f33a5cb7f370800000000000000
+      internalID: 8356354729213926755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoke3_1
+      name: result_1
       rect:
         serializedVersion: 2
-        x: 509
-        y: 609
-        width: 489
-        height: 387
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f2372cdd3f93e050800000000000000
-      internalID: 5828677430782931699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smoke3_2
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 261
-        width: 462
-        height: 376
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 313e9993e468c8e70800000000000000
-      internalID: 9118811016050369299
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smoke3_3
-      rect:
-        serializedVersion: 2
-        x: 103
+        x: 467
         y: 23
-        width: 218
-        height: 224
+        width: 285
+        height: 568
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0969c0458b5e2730800000000000000
-      internalID: 3976216148890446090
+      spriteID: 8357defbee7acb6d0800000000000000
+      internalID: -2973317010107304648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoke3_4
+      name: result_2
       rect:
         serializedVersion: 2
-        x: 417
-        y: 0
-        width: 237
-        height: 247
+        x: 650
+        y: 624
+        width: 341
+        height: 381
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3e3c79543d5f07a0800000000000000
-      internalID: -6408801265303929283
+      spriteID: d3d2e08fda5398c60800000000000000
+      internalID: 7820841249212869949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoke3_5
+      name: result_3
       rect:
         serializedVersion: 2
-        x: 710
-        y: 0
-        width: 314
-        height: 178
+        x: 783
+        y: 476
+        width: 191
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32410fd1e317a4130800000000000000
-      internalID: 3551775767739241507
+      spriteID: 6e2bb5dee90ad2870800000000000000
+      internalID: 8659754262950818534
       vertices: []
       indices: 
       edges: []
