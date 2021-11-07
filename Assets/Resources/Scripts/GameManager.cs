@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
 
     public void UpdateScoreUI()
     {
-        score += 100;
+        score += ParamsSO.Entity.score;
         scoreText.text = score.ToString();
     }
 }

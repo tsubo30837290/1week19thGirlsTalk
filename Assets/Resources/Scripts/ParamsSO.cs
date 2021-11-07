@@ -20,6 +20,9 @@ public class ParamsSO : ScriptableObject
     [Header("トッピング弾の速度")]
     public float bulletSpeed;
 
+    [Header("1度に上がるスコアの量")]
+    public int score;
+
     //MyScriptableObjectが保存してある場所のパス
     public const string PATH = "ParamsSO";
 
