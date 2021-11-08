@@ -43,4 +43,31 @@ public class Player : MonoBehaviour
             0.1f                    // 演出時間
         ).OnComplete(() => transform.position = new Vector3(transform.position.x, -4, 0));
     }
+
+    void SpecialShot()
+    {
+        // 弾を生成する
+        GameObject bullet = Instantiate(bulletPref, transform.position, transform.rotation);
+
+        // ランダムな数字を用意する
+        int r = Random.Range(0, bulletSp.Length);
+
+        // ランダムに色を変更する
+        int n = Random.Range(0, colors.Length);
+
+        // 画像をランダムにかえる
+        bullet.GetComponent<SpriteRenderer>().sprite = bulletSp[r];
+        bullet.GetComponent<SpriteRenderer>().color = colors[n];
+
+        // 反動を与える
+        transform.DOPunchPosition(
+            new Vector3(0, -0.5f, 0), // パンチの方向と強さ
+            0.1f                    // 演出時間
+        ).OnComplete(() => transform.position = new Vector3(transform.position.x, -4, 0));
+    }
+
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.DrawSphere(Vector3.zero,0.4f);
+    //}
 }

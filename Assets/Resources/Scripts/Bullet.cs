@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using System.Linq;
 
 public class Bullet : MonoBehaviour
 {
@@ -29,31 +30,6 @@ public class Bullet : MonoBehaviour
         if (!hit)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.transform.position + 100 * targetPos, speed * Time.deltaTime);
-
-            // もし弾が6より上に移動したら
-            //if (transform.position.y >= 20)
-            //{
-            // 弾（自分自身）を消してね
-            //Destroy(gameObject);
-            //}
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (hit)
-        {
-            // バナナに当たったら
-            if (collision.gameObject.tag == "Banana")
-            {
-                gameObject.transform.parent = collision.gameObject.transform;
-
-                collision.gameObject.GetComponent<BananaMove>().UpdateValue();
-            }
-            else if (collision.gameObject.tag == "Finish")
-            {
-            }
-            Debug.Log(collision.name);
         }
     }
 
@@ -71,7 +47,7 @@ public class Bullet : MonoBehaviour
             .OnComplete(()=> Hit());
     }
 
-    void Hit()//Collider2D collision)
+    void Hit()
     {
         hit = true;
 
@@ -80,8 +56,24 @@ public class Bullet : MonoBehaviour
         DOTween.ToAlpha(() => sr.color,
         a => sr.color = a, 1.0f, 0.1f);
 
-        //gameObject.transform.parent = collision.gameObject.transform;
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(gameObject.transform.position, 0.4f, Vector2.zero);
+        List<RaycastHit2D> hitList = hits.ToList();
 
-        //collision.gameObject.GetComponent<BananaMove>().UpdateValue();
+        RaycastHit2D banana = hitList.Find(b => b.collider.tag == "Banana");
+        RaycastHit2D wall = hitList.Find(b => b.collider.tag == "Wall");
+        if (banana)
+        {
+            gameObject.transform.parent = banana.collider.gameObject.transform;
+            banana.collider.gameObject.GetComponent<BananaMove>().UpdateValue();
+        }
+        else if (wall)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        DOTween.KillAll();
     }
 }
