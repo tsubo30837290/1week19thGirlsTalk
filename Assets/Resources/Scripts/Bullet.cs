@@ -21,39 +21,42 @@ public class Bullet : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         speed = ParamsSO.Entity.bulletSpeed;
 
-        //ShotMove();
+        ShotMove();
     }
 
     void Update()
     {
         if (!hit)
         {
-            //transform.position += new Vector3(0, speed, speed) * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, target.transform.position + 100 * targetPos, speed * Time.deltaTime);
 
             // もし弾が6より上に移動したら
-            if (transform.position.y >= 20)
-            {
-                // 弾（自分自身）を消してね
-                Destroy(gameObject);
-            }
+            //if (transform.position.y >= 20)
+            //{
+            // 弾（自分自身）を消してね
+            //Destroy(gameObject);
+            //}
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // バナナに当たったら
-        if (collision.gameObject.tag == "Banana")
+        if (hit)
         {
-            //StartCoroutine(Hit(collision));
-            hit = true;
-            gameObject.transform.parent = collision.gameObject.transform;
+            // バナナに当たったら
+            if (collision.gameObject.tag == "Banana")
+            {
+                gameObject.transform.parent = collision.gameObject.transform;
 
-            collision.gameObject.GetComponent<BananaMove>().UpdateValue();
+                collision.gameObject.GetComponent<BananaMove>().UpdateValue();
+            }
+            else if (collision.gameObject.tag == "Finish")
+            {
+            }
+            Debug.Log(collision.name);
         }
     }
 
-    /*
     void ShotMove()
     {
         // サイズを1 → 0.5に少しずつする
@@ -64,22 +67,21 @@ public class Bullet : MonoBehaviour
 
         // 徐々にフェードさせる（α値を下げる）
         DOTween.ToAlpha(() => sr.color,
-        a => sr.color = a, 0.0f, 0.2f);
-    }*/
+        a => sr.color = a, 0.0f, 0.2f)
+            .OnComplete(()=> Hit());
+    }
 
-    /*
-    IEnumerator Hit(Collider2D collision)
+    void Hit()//Collider2D collision)
     {
-        //float r = Random.Range(0, 0.01f);
-        //yield return new WaitForSeconds(r);
+        hit = true;
+
+        gameObject.transform.position = target.transform.position;
 
         DOTween.ToAlpha(() => sr.color,
         a => sr.color = a, 1.0f, 0.1f);
 
-        hit = true;
-        gameObject.transform.parent = collision.gameObject.transform;
+        //gameObject.transform.parent = collision.gameObject.transform;
 
-        collision.gameObject.GetComponent<BananaMove>().UpdateValue();
-        yield return null;
-    }*/
+        //collision.gameObject.GetComponent<BananaMove>().UpdateValue();
+    }
 }

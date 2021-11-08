@@ -337,6 +337,63 @@ Transform:
   m_Father: {fileID: 1007163010}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &151049125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 151049127}
+  - component: {fileID: 151049126}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Finish
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &151049126
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151049125}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &151049127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151049125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 20, y: 12, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &262134122
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,7 +943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &907899900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -909,11 +966,11 @@ MonoBehaviour:
   - serializedVersion: 2
     rgba: 4283913950
   - serializedVersion: 2
-    rgba: 4294936159
+    rgba: 4294929725
   - serializedVersion: 2
-    rgba: 4294931893
+    rgba: 4294918810
   - serializedVersion: 2
-    rgba: 4293301503
+    rgba: 4292036095
 --- !u!212 &907899901
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -953,7 +1010,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 21
   m_Sprite: {fileID: 21300000, guid: fcf6b598b29fb9e419bd654ca888ed63, type: 3}
   m_Color: {r: 0.8705883, g: 0.3372549, b: 0.34117648, a: 1}
   m_FlipX: 0
@@ -1623,11 +1680,11 @@ MonoBehaviour:
   - {fileID: 2618330185408306078, guid: 84120d577b6f7914cbc8d7d63f424bbe, type: 3}
   colors:
   - serializedVersion: 2
-    rgba: 4291015162
+    rgba: 4288313855
   - serializedVersion: 2
-    rgba: 4294950874
+    rgba: 4294937276
   - serializedVersion: 2
-    rgba: 4294953905
+    rgba: 4294941545
   - serializedVersion: 2
     rgba: 4280243084
   - serializedVersion: 2
