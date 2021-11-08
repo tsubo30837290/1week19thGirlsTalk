@@ -690,7 +690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f252a94c1c4430284fefc84cdc4e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maskTexture: {fileID: 2800000, guid: f87ec85239d94414489bdc32336744a2, type: 3}
+  maskTexture: {fileID: 2800000, guid: 6f7f66c4d8863488db82d5a61242d375, type: 3}
 --- !u!4 &425798633
 Transform:
   m_ObjectHideFlags: 0
@@ -1308,7 +1308,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 23
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1319,7 +1319,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u30B7\u30FC\u30F3\u9077\u79FB"
 --- !u!222 &1068281120
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1849,8 +1849,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -236, y: 236}
+  m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1620972387
 MonoBehaviour:

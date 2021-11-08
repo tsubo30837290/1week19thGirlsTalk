@@ -18,7 +18,7 @@ public class SceneMove : MonoBehaviour
         ImageMaskTransition mask = new ImageMaskTransition()
         {
             maskTexture = maskTexture,
-            backgroundColor = Color.yellow,
+            backgroundColor = new Color32(236,206,206,255),
             nextScene = SceneManager.GetActiveScene().buildIndex == 1 ? 2 : 1
         };
         TransitionKit.instance.transitionWithDelegate(mask);
