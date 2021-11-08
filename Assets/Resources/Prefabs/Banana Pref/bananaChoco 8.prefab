@@ -651,6 +651,7 @@ MonoBehaviour:
   - {fileID: 4165996280648330898, guid: dfb288494134a914cadc07226cf76050, type: 3}
   choco: {fileID: 7163218715097964033}
   stick: {fileID: 387198289824148208}
+  effect: {fileID: 6226322260764680848, guid: 643a1e85e03b44ed093e3680c437c384, type: 3}
 --- !u!60 &3230762646351018459
 PolygonCollider2D:
   m_ObjectHideFlags: 0

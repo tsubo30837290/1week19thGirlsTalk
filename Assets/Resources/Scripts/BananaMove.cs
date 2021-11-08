@@ -17,6 +17,8 @@ public class BananaMove : MonoBehaviour
     [SerializeField] GameObject choco;
     [SerializeField] GameObject stick;
 
+    [SerializeField] GameObject effect;
+
     bool isUp;
 
     void Start()
@@ -52,7 +54,8 @@ public class BananaMove : MonoBehaviour
             if (bananaSlider.value >= 0.9f)
             {
                 isUp = true;
-                Destroy(bananaUI,0.1f);
+                Instantiate(effect, transform.position, transform.rotation);
+                Destroy(gameObject);
 
                 // Score加算
                 GameManager.instance.UpdateScoreUI();

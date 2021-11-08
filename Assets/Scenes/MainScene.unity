@@ -886,7 +886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &907899900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,6 +900,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  targetSp:
+  - {fileID: 21300000, guid: fcf6b598b29fb9e419bd654ca888ed63, type: 3}
+  - {fileID: 21300000, guid: 74406fd1e17681540ab18a8ce378e3ce, type: 3}
+  - {fileID: 21300000, guid: 8166e9f13c597b44d8341852960e024a, type: 3}
+  - {fileID: 21300000, guid: d18ea157ae9d7714d8579040be14df9a, type: 3}
+  colors:
+  - serializedVersion: 2
+    rgba: 4283913950
+  - serializedVersion: 2
+    rgba: 4294936159
+  - serializedVersion: 2
+    rgba: 4294931893
+  - serializedVersion: 2
+    rgba: 4293301503
 --- !u!212 &907899901
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -940,8 +954,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: 471418f98805b4111a3e3fd3b2d4ae5c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: fcf6b598b29fb9e419bd654ca888ed63, type: 3}
+  m_Color: {r: 0.8705883, g: 0.3372549, b: 0.34117648, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1603,13 +1617,13 @@ MonoBehaviour:
   - {fileID: -5837486536977534547, guid: 84120d577b6f7914cbc8d7d63f424bbe, type: 3}
   - {fileID: 2718909718729486226, guid: 84120d577b6f7914cbc8d7d63f424bbe, type: 3}
   - {fileID: -3522444704638071487, guid: 84120d577b6f7914cbc8d7d63f424bbe, type: 3}
-  - {fileID: 8326926143674138334, guid: 84120d577b6f7914cbc8d7d63f424bbe, type: 3}
-  - {fileID: 3353649473256558755, guid: 84120d577b6f7914cbc8d7d63f424bbe, type: 3}
-  - {fileID: 2440930143905366714, guid: 84120d577b6f7914cbc8d7d63f424bbe, type: 3}
+  - {fileID: -2433992644433043094, guid: 5d43b8554f3078941aa1c22cdfc64865, type: 3}
+  - {fileID: 9000867033425570247, guid: 5d43b8554f3078941aa1c22cdfc64865, type: 3}
+  - {fileID: 342337127590481692, guid: 5d43b8554f3078941aa1c22cdfc64865, type: 3}
   - {fileID: 2618330185408306078, guid: 84120d577b6f7914cbc8d7d63f424bbe, type: 3}
   colors:
   - serializedVersion: 2
-    rgba: 4294950384
+    rgba: 4291015162
   - serializedVersion: 2
     rgba: 4294950874
   - serializedVersion: 2

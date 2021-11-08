@@ -5,10 +5,13 @@ using UnityEngine;
 public class TargetMarker : MonoBehaviour
 {
     public float speed;
+    [SerializeField] Sprite[] targetSp;
+    [SerializeField] Color32[] colors;
 
     void Start()
     {
         speed = ParamsSO.Entity.playerSpeed;
+        TargetSet();
     }
 
     void Update()
@@ -40,6 +43,14 @@ public class TargetMarker : MonoBehaviour
         {
             transform.position += new Vector3(0, -speed, 0) * Time.deltaTime;
         }
+    }
 
+    void TargetSet()
+    {
+        int n = Random.Range(0, targetSp.Length);
+        int r = Random.Range(0, colors.Length);
+
+        GetComponent<SpriteRenderer>().sprite = targetSp[n];
+        GetComponent<SpriteRenderer>().color = colors[r];
     }
 }
