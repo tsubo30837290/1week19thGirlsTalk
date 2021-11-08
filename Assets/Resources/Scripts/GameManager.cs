@@ -16,16 +16,29 @@ public class GameManager : MonoBehaviour
     // Scoreを表示する
     [SerializeField] Text scoreText;
     int score;
+    [SerializeField] Image spImage;
+
+    public bool feverTime;
 
     void Start()
     {
         score = 0;
         scoreText.text = score.ToString();
+        spImage.fillAmount = 0;
     }
 
     public void UpdateScoreUI()
     {
         score += ParamsSO.Entity.score;
+        spImage.fillAmount += ParamsSO.Entity.sp;
         scoreText.text = score.ToString();
+    }
+
+    private void Update()
+    {
+        if (feverTime)
+        {
+            spImage.fillAmount -= 0.1f * Time.deltaTime;
+        }
     }
 }

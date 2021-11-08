@@ -18,3 +18,4 @@ MonoBehaviour:
   playerSpeed: 5
   bulletSpeed: 30
   score: 100
+  sp: 0.1
