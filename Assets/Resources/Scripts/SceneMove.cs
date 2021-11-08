@@ -19,7 +19,7 @@ public class SceneMove : MonoBehaviour
         {
             maskTexture = maskTexture,
             backgroundColor = Color.yellow,
-            nextScene = SceneManager.GetActiveScene().buildIndex == 4 ? 5 : 4
+            nextScene = SceneManager.GetActiveScene().buildIndex == 1 ? 2 : 1
         };
         TransitionKit.instance.transitionWithDelegate(mask);
     }
