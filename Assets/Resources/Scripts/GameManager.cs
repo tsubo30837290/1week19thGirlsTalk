@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    [SerializeField] GameObject[] player;
 
     // Awake : Startより前に呼ばれる関数
     private void Awake()
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        PlayerInstance();
         score = 0;
         scoreText.text = score.ToString();
         spImage.fillAmount = 0;
@@ -40,5 +42,11 @@ public class GameManager : MonoBehaviour
         {
             spImage.fillAmount -= 0.1f * Time.deltaTime;
         }
+    }
+
+    void PlayerInstance()
+    {
+        int n = Random.Range(0, player.Length);
+        Instantiate(player[n], new Vector3(0, -4, 0), transform.rotation);
     }
 }

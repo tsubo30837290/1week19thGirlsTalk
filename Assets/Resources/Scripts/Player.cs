@@ -12,6 +12,39 @@ public class Player : MonoBehaviour
 
     [SerializeField] Color32[] colors;
 
+    [SerializeField] SpriteRenderer shoot;
+    [SerializeField] Color32[] shootColors;
+    [SerializeField] Color32[] shootColorsSide;
+
+    public enum TYPE
+    {
+        small,
+        big,
+    }
+    public TYPE type = TYPE.small;
+
+    void Start()
+    {
+        int c = Random.Range(0, shootColors.Length);
+
+        if (type == TYPE.small)
+        {
+            shoot.color = shootColors[c];
+        }
+        else
+        {
+            shoot.color = shootColors[c];
+            foreach (Transform child in gameObject.transform)
+            {
+                if (child.gameObject.name == "handleBG")
+                {
+                    child.gameObject.GetComponent<SpriteRenderer>().color = shootColorsSide[c];
+                }
+            }
+        }
+    }
+
+
     void Update()
     {
         // もしスペースが押されたら
