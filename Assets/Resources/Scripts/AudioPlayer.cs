@@ -25,6 +25,7 @@ public class AudioPlayer : MonoBehaviour
         else if (scene == SCENE.Clear)
         {
             MusicStart("NormalClear");
+            naichilab.RankingLoader.Instance.SendScoreAndShowRanking(GameManager.instance.score);
         }
     }
 

@@ -20,4 +20,4 @@ MonoBehaviour:
   score: 100
   sp: 0.1
   feverScore: 300
-  timeLimit: 92
+  timeLimit: 5

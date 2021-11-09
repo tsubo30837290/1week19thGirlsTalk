@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     // Scoreを表示する
     [SerializeField] Text scoreText;
-    int score;
+    public int score;
     [SerializeField] Image spImage;
 
     public bool feverTime;
