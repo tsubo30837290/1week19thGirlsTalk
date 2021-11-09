@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TitleScene.unity
+    guid: 7f66914cccd39450798450876d68e961
+  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Slimomo/Slimomo_result.unity
-    guid: db8ee4d6457a4bd4cbe86c7f4b891b0e
+    path: Assets/Scenes/ClearScene.unity
+    guid: 1067a9d51f2ac4c788ddc554d5def4ef
   m_configObjects: {}

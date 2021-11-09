@@ -15,7 +15,7 @@ public class BananaGenerator : MonoBehaviour
 
     IEnumerator BananaInstance()
     {
-        while (true)
+        while (!GameManager.instance.isFinish)
         {
             int r = Random.Range(0, banana.Length);
             // バナナを生成する(Instantiate)：何を、どこに、どの向きで

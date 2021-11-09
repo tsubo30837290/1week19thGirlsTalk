@@ -19,3 +19,5 @@ MonoBehaviour:
   bulletSpeed: 30
   score: 100
   sp: 0.1
+  feverScore: 300
+  timeLimit: 92

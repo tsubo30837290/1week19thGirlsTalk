@@ -41,7 +41,10 @@ public class SoundManager : MonoBehaviour
             case "Fever":
                 audioSourceBGM.clip = audioClipsBGM[2];
                 break;
-            case "Clear":
+            case "HighScoreClear":
+                audioSourceBGM.clip = audioClipsBGM[3];
+                break;
+            case "NormalClear":
                 audioSourceBGM.clip = audioClipsBGM[3];
                 break;
         }

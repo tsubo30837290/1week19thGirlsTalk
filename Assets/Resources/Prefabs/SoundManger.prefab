@@ -46,9 +46,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSourceBGM: {fileID: 1175659713584457706}
-  audioClipsBGM: []
+  audioClipsBGM:
+  - {fileID: 8300000, guid: 8f12d64f39ddc4f1b94978749dcdbce3, type: 3}
+  - {fileID: 8300000, guid: fb64dcdd995d14a28b487c0dce76bd30, type: 3}
+  - {fileID: 8300000, guid: ef68f8b1b789844a8b53f6898ee55dbe, type: 3}
+  - {fileID: 8300000, guid: aa3adc8c65aca4293ab2a87c85f4d6b2, type: 3}
+  - {fileID: 8300000, guid: 9491f2536bcc84547858ad4dfc45b305, type: 3}
   audioSourceSE: {fileID: 8927648660467750076}
-  audioClipsSE: []
+  audioClipsSE:
+  - {fileID: 8300000, guid: 411cf948ac6e24d9088cf4264a976a0e, type: 3}
+  - {fileID: 8300000, guid: c11cd10b4658f4a27a63b6f252bc650a, type: 3}
+  - {fileID: 8300000, guid: c82e499b41d5140ba9be37789794953e, type: 3}
 --- !u!82 &1175659713584457706
 AudioSource:
   m_ObjectHideFlags: 0

@@ -47,16 +47,20 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        // もしスペースが押されたら
-        // Input：入力に関すること（キー入力、マウス入力…）
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!GameManager.instance.isFinish)
         {
-            Shot();
+            // もしスペースが押されたら
+            // Input：入力に関すること（キー入力、マウス入力…）
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Shot();
+            }
         }
     }
 
     void Shot()
     {
+        SoundManager.instance.PlaySE(1);
         // 弾を生成する
         GameObject bullet = Instantiate(bulletPref, transform.position, transform.rotation);
 

@@ -26,6 +26,12 @@ public class ParamsSO : ScriptableObject
     [Header("1度に上がるSPの量")]
     public float sp;
 
+    [Header("1度に上がるスコアの量(Fever)")]
+    public int feverScore;
+
+    [Header("制限時間")]
+    public float timeLimit;
+
     //MyScriptableObjectが保存してある場所のパス
     public const string PATH = "ParamsSO";
 
