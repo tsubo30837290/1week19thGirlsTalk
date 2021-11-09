@@ -13,6 +13,10 @@ public class Bullet : MonoBehaviour
     GameObject target;
     Vector3 targetPos;
 
+    Tween tween;
+    Tween tween2;
+    Tween tween3;
+
     void Start()
     {
         // 向かう目標地点
@@ -36,13 +40,13 @@ public class Bullet : MonoBehaviour
     void ShotMove()
     {
         // サイズを1 → 0.5に少しずつする
-        transform.DOScale(
+        tween = transform.DOScale(
             new Vector3(0.5f, 0.5f, 1),  //終了時点のScale
             0.5f       //時間
             ) ;
 
         // 徐々にフェードさせる（α値を下げる）
-        DOTween.ToAlpha(() => sr.color,
+        tween2 = DOTween.ToAlpha(() => sr.color,
         a => sr.color = a, 0.0f, 0.2f)
             .OnComplete(()=> Hit());
     }
@@ -53,7 +57,7 @@ public class Bullet : MonoBehaviour
 
         gameObject.transform.position = target.transform.position;
 
-        DOTween.ToAlpha(() => sr.color,
+        tween3 = DOTween.ToAlpha(() => sr.color,
         a => sr.color = a, 1.0f, 0.1f);
 
         RaycastHit2D[] hits = Physics2D.CircleCastAll(gameObject.transform.position, 0.4f, Vector2.zero);
@@ -61,19 +65,33 @@ public class Bullet : MonoBehaviour
 
         RaycastHit2D banana = hitList.Find(b => b.collider.tag == "Banana");
         RaycastHit2D wall = hitList.Find(b => b.collider.tag == "Wall");
-        if (banana)
+        RaycastHit2D ojama = hitList.Find(b => b.collider.tag == "Ojama");
+
+        if (ojama)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sortingOrder = 24;
+            gameObject.transform.parent = ojama.collider.gameObject.transform;
+            gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            Destroy(gameObject, 2f);
+        }
+        else if (banana)
         {
             gameObject.transform.parent = banana.collider.gameObject.transform;
             banana.collider.gameObject.GetComponent<BananaMove>().UpdateValue();
         }
         else if (wall)
         {
-            Destroy(gameObject);
+            gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            gameObject.GetComponent<SpriteRenderer>().sortingOrder = -1;
+            Destroy(gameObject, 2f);
         }
     }
 
     private void OnDestroy()
     {
-        DOTween.KillAll();
+        //DOTween.Kill(transform);
+        tween.Kill();
+        tween2.Kill();
+        tween3.Kill();
     }
 }

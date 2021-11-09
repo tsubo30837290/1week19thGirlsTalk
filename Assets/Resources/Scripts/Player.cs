@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
         {
             // もしスペースが押されたら
             // Input：入力に関すること（キー入力、マウス入力…）
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space))
             {
                 Shot();
             }
