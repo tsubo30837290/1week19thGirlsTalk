@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cba964c3f5cd941cf9c6bf33d802c852
+guid: 14fde584aa26644bbaad189c8d49dc2d
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - ???????????
+  - Ubuntu-Title
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
