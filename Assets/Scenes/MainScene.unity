@@ -682,9 +682,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b1d6b3aaeae744a55bfec61baa0f9f1b, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 173
@@ -905,9 +905,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b1d6b3aaeae744a55bfec61baa0f9f1b, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 173
@@ -1577,6 +1577,7 @@ MonoBehaviour:
   - {fileID: 5388438543296107091, guid: 3575a134b44ae4005aa011a6f715fd72, type: 3}
   finishImage: {fileID: 994147953}
   scoreText: {fileID: 352200837}
+  score: 0
   spImage: {fileID: 4720883104114858281}
   feverTime: 0
   isFinish: 0

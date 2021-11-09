@@ -59,7 +59,7 @@ namespace naichilab
             {
                 if (string.IsNullOrEmpty(nameInputField.text))
                 {
-                    return "名無し";
+                    return "No Name";
                 }
 
                 return nameInputField.text;
@@ -80,11 +80,11 @@ namespace naichilab
         IEnumerator GetHighScoreAndRankingBoard()
         {
             scoreLabel.text = _lastScore.TextForDisplay;
-            captionLabel.text = string.Format("{0}ランキング", _board.BoardName);
+            captionLabel.text = string.Format("{0}Ranking", _board.BoardName);
 
             //ハイスコア取得
             {
-                highScoreLabel.text = "取得中...";
+                highScoreLabel.text = "Loading...";
 
                 var hiScoreCheck = new YieldableNcmbQuery<NCMBObject>(_board.ClassName);
                 hiScoreCheck.WhereEqualTo(OBJECT_ID, ObjectID);
@@ -144,7 +144,7 @@ namespace naichilab
         private IEnumerator SendScoreEnumerator()
         {
             sendScoreButton.interactable = false;
-            highScoreLabel.text = "送信中...";
+            highScoreLabel.text = "Sending...";
 
             //ハイスコア送信
             if (_ncmbRecord == null)
@@ -205,7 +205,7 @@ namespace naichilab
 
             yield return so.FindAsync();
 
-            Debug.Log("データ取得 : " + so.Count.ToString() + "件");
+            Debug.Log("Data Count : " + so.Count.ToString());
             Destroy(msg);
 
             if (so.Error != null)

@@ -25,7 +25,7 @@ public class AudioPlayer : MonoBehaviour
         else if (scene == SCENE.Clear)
         {
             MusicStart("NormalClear");
-            naichilab.RankingLoader.Instance.SendScoreAndShowRanking(GameManager.instance.score);
+            Invoke("RankingOn", 1.5f);
         }
     }
 
@@ -42,5 +42,10 @@ public class AudioPlayer : MonoBehaviour
     public void CTT()
     {
         SceneMove.instance.ClearToTitle();
+    }
+
+    void RankingOn()
+    {
+        naichilab.RankingLoader.Instance.SendScoreAndShowRanking(GameManager.instance.score);
     }
 }
