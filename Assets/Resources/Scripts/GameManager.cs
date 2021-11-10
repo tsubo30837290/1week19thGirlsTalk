@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     [SerializeField] GameObject[] player;
 
-    [SerializeField] GameObject finishImage;
+    [SerializeField] GameObject[] finishImage;
 
     // Awake : Startより前に呼ばれる関数
     private void Awake()
@@ -107,7 +107,9 @@ public class GameManager : MonoBehaviour
     {
         // 終了SE
         SoundManager.instance.PlaySE(4);
-        finishImage.SetActive(true);
+
+        int n = Random.Range(0, finishImage.Length);
+        Instantiate(finishImage[n], new Vector3(0, 1.5f, 0), transform.rotation);
 
         yield return new WaitForSeconds(2);
 

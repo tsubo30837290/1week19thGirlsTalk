@@ -18,6 +18,7 @@ public class BananaMove : MonoBehaviour
     [SerializeField] GameObject stick;
 
     [SerializeField] GameObject effect;
+    [SerializeField] GameObject[] decoEffect;
 
     bool isUp;
 
@@ -61,7 +62,16 @@ public class BananaMove : MonoBehaviour
             if (bananaSlider.value >= 0.9f)
             {
                 isUp = true;
-                Instantiate(effect, transform.position, transform.rotation);
+
+                if (!GameManager.instance.feverTime)
+                {
+                    Instantiate(effect, transform.position, transform.rotation);
+                }
+                else
+                {
+                    int n = Random.Range(0, decoEffect.Length);
+                    Instantiate(decoEffect[n], transform.position, transform.rotation);
+                }
                 Destroy(gameObject);
 
                 // Score加算
