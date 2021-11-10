@@ -72,6 +72,7 @@ public class BananaMove : MonoBehaviour
                     int n = Random.Range(0, decoEffect.Length);
                     Instantiate(decoEffect[n], transform.position, transform.rotation);
                 }
+                SoundManager.instance.PlaySE(5);
                 Destroy(gameObject);
 
                 // Score加算
