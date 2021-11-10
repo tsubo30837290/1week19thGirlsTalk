@@ -20,7 +20,15 @@ public class BananaGenerator : MonoBehaviour
             int r = Random.Range(0, banana.Length);
             // バナナを生成する(Instantiate)：何を、どこに、どの向きで
             Instantiate(banana[r], transform.position, transform.rotation);
-            yield return new WaitForSeconds(interval);
+
+            if (!GameManager.instance.feverTime)
+            {
+                yield return new WaitForSeconds(interval);
+            }
+            else
+            {
+                yield return new WaitForSeconds(1);
+            }
         }
     }
 }

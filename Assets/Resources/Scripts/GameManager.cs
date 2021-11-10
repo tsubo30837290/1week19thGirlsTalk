@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                spImage.fillAmount += 0.01f * Time.deltaTime;
+                spImage.fillAmount += 0.02f * Time.deltaTime;
             }
 
             if (spImage.fillAmount >= 1)
@@ -86,11 +86,13 @@ public class GameManager : MonoBehaviour
     {
         if (feverTime)
         {
+            SoundManager.instance.PlaySE(3);
             feverTime = false;
             SoundManager.instance.PlayBGM("Main");
         }
         else
         {
+            SoundManager.instance.PlaySE(3);
             feverTime = true;
             SoundManager.instance.PlayBGM("Fever");
         }
@@ -104,6 +106,7 @@ public class GameManager : MonoBehaviour
     IEnumerator finishMove()
     {
         // 終了SE
+        SoundManager.instance.PlaySE(4);
         finishImage.SetActive(true);
 
         yield return new WaitForSeconds(2);

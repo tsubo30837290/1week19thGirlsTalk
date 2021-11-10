@@ -17,6 +17,8 @@ public class Bullet : MonoBehaviour
     Tween tween2;
     Tween tween3;
 
+    public Vector3 offset;
+
     void Start()
     {
         // 向かう目標地点
@@ -39,11 +41,14 @@ public class Bullet : MonoBehaviour
 
     void ShotMove()
     {
-        // サイズを1 → 0.5に少しずつする
-        tween = transform.DOScale(
-            new Vector3(0.5f, 0.5f, 1),  //終了時点のScale
-            0.5f       //時間
-            ) ;
+        if (!GameManager.instance.feverTime)
+        {
+            // サイズを1 → 0.5に少しずつする
+            tween = transform.DOScale(
+                new Vector3(0.5f, 0.5f, 1),  //終了時点のScale
+                0.5f       //時間
+                );
+        }
 
         // 徐々にフェードさせる（α値を下げる）
         tween2 = DOTween.ToAlpha(() => sr.color,
@@ -55,7 +60,7 @@ public class Bullet : MonoBehaviour
     {
         hit = true;
 
-        gameObject.transform.position = target.transform.position;
+        gameObject.transform.position = target.transform.position + offset;
 
         tween3 = DOTween.ToAlpha(() => sr.color,
         a => sr.color = a, 1.0f, 0.1f);

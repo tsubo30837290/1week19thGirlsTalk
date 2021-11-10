@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     [SerializeField] Color32[] shootColors;
     [SerializeField] Color32[] shootColorsSide;
 
+    [SerializeField] Sprite[] decoSp;
+
     public enum TYPE
     {
         small,
@@ -44,16 +46,25 @@ public class Player : MonoBehaviour
         }
     }
 
-
     void Update()
     {
         if (!GameManager.instance.isFinish)
         {
-            // もしスペースが押されたら
-            // Input：入力に関すること（キー入力、マウス入力…）
-            if (Input.GetKey(KeyCode.Space))
+            if (!GameManager.instance.feverTime)
             {
-                Shot();
+                // もしスペースが押されたら
+                // Input：入力に関すること（キー入力、マウス入力…）
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    SpecialShot();
+                }
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    SpecialShot();
+                }
             }
         }
     }
@@ -83,24 +94,36 @@ public class Player : MonoBehaviour
 
     void SpecialShot()
     {
-        // 弾を生成する
-        GameObject bullet = Instantiate(bulletPref, transform.position, transform.rotation);
+        SoundManager.instance.PlaySE(1);
 
-        // ランダムな数字を用意する
-        int r = Random.Range(0, bulletSp.Length);
+        BulletInstance(new Vector3(0, 0, 0));
 
-        // ランダムに色を変更する
-        int n = Random.Range(0, colors.Length);
-
-        // 画像をランダムにかえる
-        bullet.GetComponent<SpriteRenderer>().sprite = bulletSp[r];
-        bullet.GetComponent<SpriteRenderer>().color = colors[n];
+        for (int i = 0; i < 30; i++)
+        {
+            float x = Random.Range(-0.8f, 0.8f);
+            float y = Random.Range(-0.8f, 0.8f);
+            BulletInstance(new Vector3(x, y, 0));
+        }
 
         // 反動を与える
         transform.DOPunchPosition(
             new Vector3(0, -0.5f, 0), // パンチの方向と強さ
             0.1f                    // 演出時間
         ).OnComplete(() => transform.position = new Vector3(transform.position.x, -4, 0));
+    }
+
+    void BulletInstance(Vector3 offset)
+    {
+        // 弾を生成する
+        GameObject bullet = Instantiate(bulletPref, transform.position, transform.rotation);
+
+        bullet.GetComponent<Bullet>().offset = offset;
+
+        // ランダムな数字を用意する
+        int r = Random.Range(0, decoSp.Length);
+
+        // 画像をランダムにかえる
+        bullet.GetComponent<SpriteRenderer>().sprite = decoSp[r];
     }
 
     //private void OnDrawGizmos()

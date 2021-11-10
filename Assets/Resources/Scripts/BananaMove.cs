@@ -31,7 +31,14 @@ public class BananaMove : MonoBehaviour
 
     void Update()
     {
-        transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+        if (!GameManager.instance.feverTime)
+        {
+            transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+        }
+        else
+        {
+            transform.position += new Vector3(speed * 3, 0, 0) * Time.deltaTime;
+        }
 
         // もしバナナが-10より左に移動したら
         if (transform.position.x <= -10)
@@ -63,8 +70,15 @@ public class BananaMove : MonoBehaviour
             // そうじゃなかったらバナナゲージを加算する
             else
             {
-                // ゲージを上げる
-                bananaSlider.value += ParamsSO.Entity.bananaHitGauge;
+                if (!GameManager.instance.feverTime)
+                {
+                    // ゲージを上げる
+                    bananaSlider.value += ParamsSO.Entity.bananaHitGauge;
+                }
+                else
+                {
+                    bananaSlider.value += 0.025f;
+                }
             }
         }
     }
