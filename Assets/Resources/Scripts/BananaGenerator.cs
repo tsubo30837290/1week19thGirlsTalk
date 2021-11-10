@@ -27,7 +27,7 @@ public class BananaGenerator : MonoBehaviour
             }
             else
             {
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(interval / 3);
             }
         }
     }
