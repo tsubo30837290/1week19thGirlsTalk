@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
                 // Input：入力に関すること（キー入力、マウス入力…）
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
-                    SpecialShot();
+                    Shot();
                 }
             }
             else
@@ -98,7 +98,7 @@ public class Player : MonoBehaviour
 
         BulletInstance(new Vector3(0, 0, 0));
 
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < 20; i++)
         {
             float x = Random.Range(-0.8f, 0.8f);
             float y = Random.Range(-0.8f, 0.8f);
@@ -121,6 +121,12 @@ public class Player : MonoBehaviour
 
         // ランダムな数字を用意する
         int r = Random.Range(0, decoSp.Length);
+
+        if (r > 4)
+        {
+            bullet.GetComponent<Bullet>().smallParts = true;
+            bullet.GetComponent<SpriteRenderer>().sortingOrder -= 1;
+        }
 
         // 画像をランダムにかえる
         bullet.GetComponent<SpriteRenderer>().sprite = decoSp[r];

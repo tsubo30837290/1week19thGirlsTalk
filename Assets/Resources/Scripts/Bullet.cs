@@ -17,6 +17,8 @@ public class Bullet : MonoBehaviour
     Tween tween2;
     Tween tween3;
 
+    public bool smallParts;
+
     public Vector3 offset;
 
     void Start()
@@ -48,6 +50,17 @@ public class Bullet : MonoBehaviour
                 new Vector3(0.5f, 0.5f, 1),  //終了時点のScale
                 0.5f       //時間
                 );
+        }
+        else
+        {
+            if (!smallParts)
+            {
+                // サイズを1 → 0.5に少しずつする
+                tween = transform.DOScale(
+                    new Vector3(0.4f, 0.4f, 1),  //終了時点のScale
+                    0.5f       //時間
+                    );
+            }
         }
 
         // 徐々にフェードさせる（α値を下げる）
