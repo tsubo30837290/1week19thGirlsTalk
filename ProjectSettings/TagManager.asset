@@ -8,6 +8,8 @@ TagManager:
   - Bullet
   - Wall
   - Ojama
+  - Yobiko
+  - BodyBuilder
   layers:
   - Default
   - TransparentFX

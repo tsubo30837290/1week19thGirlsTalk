@@ -17,25 +17,35 @@ public class OjamaMove : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
 
+        // まだゲームが終わってなかったらwhileの中身をループで実行させる
         while (!GameManager.instance.isFinish)
         {
             yield return null;
 
-            int r = Random.Range(0, 4);
-            switch (r)
+            int r = Random.Range(0, 3); // 0,1,2
+
+            if (!GameManager.instance.feverTime)
             {
-                case 0:
-                    yield return BodyBuilderMove();
-                    yield return new WaitForSeconds(5);
-                    break;
-                case 1:
-                    yield return MaidMove();
-                    yield return new WaitForSeconds(5);
-                    break;
-                case 2:
-                    yield return YobikoMove();
-                    yield return new WaitForSeconds(5);
-                    break;
+                switch (r)
+                {
+                    case 0:
+                        yield return BodyBuilderMove();
+                        yield return new WaitForSeconds(5);
+                        break;
+                    case 1:
+                        yield return MaidMove();
+                        yield return new WaitForSeconds(5);
+                        break;
+                    case 2:
+                        yield return YobikoMove();
+                        yield return new WaitForSeconds(5);
+                        break;
+                }
+            }
+            else
+            {
+                yield return OjamaFever();
+                yield return new WaitForSeconds(5);
             }
         }
     }
@@ -73,5 +83,31 @@ public class OjamaMove : MonoBehaviour
         )
             .OnComplete(() => Destroy(ojama3));
         yield return new WaitForSeconds(3);
+    }
+
+    IEnumerator OjamaFever()
+    {
+        SoundManager.instance.PlaySE(2);
+        GameObject ojama1 = Instantiate(ojamaChara[0], new Vector3(0, -1.5f, 0), transform.rotation);
+
+        GameObject ojama2 = Instantiate(ojamaChara[1], new Vector3(-11, 0, 0), transform.rotation);
+
+        ojama2.transform.DOMove(
+        new Vector3(15, 0, 0),　　//移動後の座標
+        7.0f 　　　　　　//時間
+        )
+            .OnComplete(() => Destroy(ojama2));
+
+        GameObject ojama3 = Instantiate(ojamaChara[2], new Vector3(12, -0.7f, 0), transform.rotation);
+
+        ojama3.transform.DOMove(
+        new Vector3(-16, -0.7f, 0),  //移動後の座標
+        8.0f       //時間
+        )
+            .OnComplete(() => Destroy(ojama3));
+
+        yield return new WaitForSeconds(5);
+
+        Destroy(ojama1);
     }
 }

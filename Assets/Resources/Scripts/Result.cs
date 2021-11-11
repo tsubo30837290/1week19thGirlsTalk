@@ -13,10 +13,35 @@ public class Result : MonoBehaviour
         score = GameManager.instance.score;
 
         // スコアごとの振り分け
-        if (score >= 1000)
+        if (score >= 15000)
         {
+            SoundManager.instance.PlayBGM("HighScoreClear");
             PanelSet();
             resultPanels[0].SetActive(true);
+        }
+        else if (score < 15000 && score >= 13500)
+        {
+            SoundManager.instance.PlayBGM("NormalClear");
+            PanelSet();
+            resultPanels[1].SetActive(true);
+        }
+        else if (score < 13500 && score >= 12000)
+        {
+            SoundManager.instance.PlayBGM("NormalClear");
+            PanelSet();
+            resultPanels[2].SetActive(true);
+        }
+        else if (score < 12000 && score >= 10000)
+        {
+            SoundManager.instance.PlayBGM("NormalClear");
+            PanelSet();
+            resultPanels[3].SetActive(true);
+        }
+        else if (score < 10000)
+        {
+            SoundManager.instance.PlayBGM("NormalClear");
+            PanelSet();
+            resultPanels[4].SetActive(true);
         }
     }
 

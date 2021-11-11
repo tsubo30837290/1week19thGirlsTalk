@@ -84,14 +84,31 @@ public class Bullet : MonoBehaviour
         RaycastHit2D banana = hitList.Find(b => b.collider.tag == "Banana");
         RaycastHit2D wall = hitList.Find(b => b.collider.tag == "Wall");
         RaycastHit2D ojama = hitList.Find(b => b.collider.tag == "Ojama");
+        RaycastHit2D yobiko = hitList.Find(b => b.collider.tag == "Yobiko");
+        RaycastHit2D bbuilder = hitList.Find(b => b.collider.tag == "BodyBuilder");
 
-        if (ojama)
+        if (bbuilder)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sortingOrder = 32;
+            gameObject.transform.parent = bbuilder.collider.gameObject.transform;
+            gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            Destroy(gameObject, 4f);
+        }
+        else if (yobiko)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sortingOrder = 28;
+            gameObject.transform.parent = yobiko.collider.gameObject.transform;
+            gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            Destroy(gameObject, 4f);
+        }
+        else if (ojama)
         {
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = 24;
             gameObject.transform.parent = ojama.collider.gameObject.transform;
             gameObject.GetComponent<CircleCollider2D>().enabled = false;
-            Destroy(gameObject, 2f);
+            Destroy(gameObject, 4f);
         }
+
         else if (banana)
         {
             gameObject.transform.parent = banana.collider.gameObject.transform;

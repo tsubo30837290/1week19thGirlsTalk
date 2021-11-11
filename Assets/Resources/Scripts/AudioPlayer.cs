@@ -24,7 +24,6 @@ public class AudioPlayer : MonoBehaviour
         }
         else if (scene == SCENE.Clear)
         {
-            MusicStart("NormalClear");
             Invoke("RankingOn", 1.5f);
         }
     }

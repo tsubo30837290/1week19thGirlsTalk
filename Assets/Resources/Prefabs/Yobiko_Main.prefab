@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2355735756879655465}
   m_Layer: 0
   m_Name: body
-  m_TagString: Ojama
+  m_TagString: Yobiko
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 23
+  m_SortingOrder: 27
   m_Sprite: {fileID: 637276202044562616, guid: 4815eaa94286d924d82c372372f5b6cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 1855720728933806787}
   m_Layer: 0
   m_Name: leg_L
-  m_TagString: Ojama
+  m_TagString: Yobiko
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,7 +289,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 21
+  m_SortingOrder: 25
   m_Sprite: {fileID: 3724999298584936792, guid: 4815eaa94286d924d82c372372f5b6cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 1886777160721606098}
   m_Layer: 0
   m_Name: Yobiko_Main
-  m_TagString: Ojama
+  m_TagString: Yobiko
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 1323505957195927551}
   m_Layer: 0
   m_Name: leg_R
-  m_TagString: Ojama
+  m_TagString: Yobiko
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -477,7 +477,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 21
+  m_SortingOrder: 25
   m_Sprite: {fileID: -7553512747413347651, guid: 4815eaa94286d924d82c372372f5b6cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -545,7 +545,7 @@ GameObject:
   - component: {fileID: 3024888688049682271}
   m_Layer: 0
   m_Name: arm
-  m_TagString: Ojama
+  m_TagString: Yobiko
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -603,7 +603,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 22
+  m_SortingOrder: 26
   m_Sprite: {fileID: 3504380999486732951, guid: 4815eaa94286d924d82c372372f5b6cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

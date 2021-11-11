@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8369943107868178259}
   m_Layer: 0
   m_Name: Leg_L
-  m_TagString: Ojama
+  m_TagString: BodyBuilder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 21
+  m_SortingOrder: 29
   m_Sprite: {fileID: -2623299255599328289, guid: fdb81f6c8d461564b9bda31a063b1ba5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 810136241648621889}
   m_Layer: 0
   m_Name: Leg_R
-  m_TagString: Ojama
+  m_TagString: BodyBuilder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -217,7 +217,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 22
+  m_SortingOrder: 30
   m_Sprite: {fileID: 1218830527643716546, guid: fdb81f6c8d461564b9bda31a063b1ba5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 2986600541897835300}
   m_Layer: 0
   m_Name: Arm
-  m_TagString: Ojama
+  m_TagString: BodyBuilder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -357,7 +357,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 21
+  m_SortingOrder: 29
   m_Sprite: {fileID: 8121516917267596630, guid: fdb81f6c8d461564b9bda31a063b1ba5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 2622662359741946972}
   m_Layer: 0
   m_Name: BodyBuilder_Main
-  m_TagString: Ojama
+  m_TagString: BodyBuilder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 4901496698879404690}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Ojama
+  m_TagString: BodyBuilder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -564,7 +564,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 23
+  m_SortingOrder: 31
   m_Sprite: {fileID: -2498707003566270170, guid: fdb81f6c8d461564b9bda31a063b1ba5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
