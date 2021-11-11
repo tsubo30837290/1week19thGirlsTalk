@@ -45,7 +45,7 @@ public class SoundManager : MonoBehaviour
                 audioSourceBGM.clip = audioClipsBGM[3];
                 break;
             case "NormalClear":
-                audioSourceBGM.clip = audioClipsBGM[3];
+                audioSourceBGM.clip = audioClipsBGM[4];
                 break;
         }
         audioSourceBGM.Play();

@@ -88,7 +88,7 @@ public class BananaMove : MonoBehaviour
                 }
                 else
                 {
-                    bananaSlider.value += 0.05f;
+                    bananaSlider.value += 0.03f;
                 }
             }
         }

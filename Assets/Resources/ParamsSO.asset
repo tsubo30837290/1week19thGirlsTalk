@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad793e94a6c14c1d84ae63f39b8eef1, type: 3}
   m_Name: ParamsSO
   m_EditorClassIdentifier: 
-  bananaSpeed: -1
-  bananaInterval: 3
+  bananaSpeed: -2
+  bananaInterval: 1.5
   bananaHitGauge: 0.1
   playerSpeed: 5
   bulletSpeed: 30

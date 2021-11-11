@@ -45,7 +45,7 @@ public class OjamaMove : MonoBehaviour
             else
             {
                 yield return OjamaFever();
-                yield return new WaitForSeconds(5);
+                yield return new WaitForSeconds(3);
             }
         }
     }
