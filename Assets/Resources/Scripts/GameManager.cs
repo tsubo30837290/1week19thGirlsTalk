@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
         {
             if (feverTime)
             {
-                spImage.fillAmount -= 0.1f * Time.deltaTime;
+                spImage.fillAmount -= 0.2f * Time.deltaTime;
             }
             else
             {

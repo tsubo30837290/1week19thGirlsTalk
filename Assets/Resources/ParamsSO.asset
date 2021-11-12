@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bananaSpeed: -2
   bananaInterval: 1.5
-  bananaHitGauge: 0.1
+  bananaHitGauge: 0.15
   playerSpeed: 5
   bulletSpeed: 30
   score: 100
